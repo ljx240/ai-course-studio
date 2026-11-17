@@ -1,0 +1,169 @@
+{
+  "id": "physics-bj-2-1",
+  "version": "1.3.0",
+  "title": "重力、弹力与受力图",
+  "number": "2.1",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第2专题 力学基础",
+  "theme": "physics.scientific",
+  "objectives": [
+    "辨别力的施力物体、大小、方向和作用点",
+    "画出重力、支持力和弹簧弹力的示意图",
+    "用校准数据检查弹簧测力计"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-spring-force",
+      "type": "interactive",
+      "title": "加挂钩码，观察拉力与重力",
+      "engine": "physics.spring-force",
+      "template": "spring-force",
+      "body": "依次选择 0.10、0.20、0.30 kg。记录伸长量，检查两个力箭头和示数如何变化。"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "力是物体之间的相互作用，可以改变运动状态，也可以使物体形变。画受力图先圈定研究对象，每画一个力就指出施力物体。\n在地面附近，重力方向竖直向下。弹力与物体的弹性形变有关：桌面对物体的支持力垂直接触面，拉伸的弹簧沿弹簧方向把所连物体向自身一侧拉。重力竖直向下，不一定垂直于接触面。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "重力大小与方向",
+      "formula": "G=mg\n\\text{书静止且竖直仅受两力时}\\quad F_{支持}=G",
+      "body": "地面附近取 g 近似恒定，按题意使用 9.8 N/kg 或 10 N/kg。重力方向竖直向下。第二式针对放在水平桌面上且竖直方向仅受重力与支持力的静止物体。",
+      "explanation": "先明确受力物体，再把它的质量换成千克，乘以重力加速度得到重力。书静止时，在同一个受力图里比较书所受的重力和桌面对书的支持力。",
+      "symbols": [
+        {
+          "symbol": "G",
+          "meaning": "重力的大小",
+          "unit": "N"
+        },
+        {
+          "symbol": "m",
+          "meaning": "质量",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "meaning": "单位质量所受的重力",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "F_{支持}",
+          "meaning": "桌面对研究物体的支持力大小",
+          "unit": "N"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "质量 0.40 kg 的书静止在水平桌面上。取 g＝10 N/kg，求书所受重力和桌面对书的支持力。",
+      "steps": [
+        {
+          "title": "只画书所受的力",
+          "body": "书受到竖直向下的重力和桌面对书施加的竖直向上的支持力。书压桌面的力作用在桌上。"
+        },
+        {
+          "title": "由质量计算重力",
+          "body": "0.40 千克乘每千克 10 牛顿，书重 4.0 牛顿。",
+          "formula": "G=0.40\\text{ kg}×10\\text{ N/kg}=4.0\\text{ N}"
+        },
+        {
+          "title": "用二力平衡求支持力",
+          "body": "书静止，两个竖直力大小相等、方向相反，支持力为 4.0 牛顿，方向竖直向上。",
+          "formula": "F_{支持}=G=4.0\\text{ N}"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "使用前看量程、分度值，并在使用方向调零。竖直悬挂 100 g、200 g、300 g 钩码，待静止后读数。记录质量和拉力，比较在 g＝10 N/kg 的课堂近似下读数与 1、2、3 N 是否相符。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "仪器空载有非零读数时，先调零再测。弹簧伸长量与拉力的线性关系只在合适的弹性范围内近似成立；不要靠超量程拉伸来验证它。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "画斜面上物块的重力，箭头方向如何？",
+      "options": [
+        "沿斜面向下",
+        "垂直斜面向下",
+        "竖直向下",
+        "竖直向上"
+      ],
+      "answer": 2,
+      "explanation": "地面附近的重力始终竖直向下；斜面倾斜不会改变重力方向。",
+      "knowledge_points": [
+        "kp-physics-bj-2-1-2"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "质量为 250 g 的物体，在 g＝10 N/kg 处所受重力是多少？",
+      "options": [
+        "250 N",
+        "2.5 N",
+        "25 N",
+        "0.25 N"
+      ],
+      "answer": 1,
+      "explanation": "250 g＝0.25 kg，重力为 0.25×10＝2.5 N。",
+      "knowledge_points": [
+        "kp-physics-bj-2-1-1"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "竖直空载测力计指在 0.2 N。开始测量前应做什么？",
+      "options": [
+        "直接测并把每次结果乘 0.2",
+        "继续拉到量程以外",
+        "把分度值改成 0.2 N",
+        "按使用方向重新调零"
+      ],
+      "answer": 3,
+      "explanation": "零点应在使用方向调整好，再在量程内测量。",
+      "knowledge_points": [
+        "kp-physics-bj-2-1-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "一个木块静止在粗糙斜面上，斜面固定，木块有沿坡下滑的趋势。用文字写出木块所受三个力的施力物体和方向。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：以木块为对象（1）；地球施加的重力竖直向下（1）；斜面施加的支持力垂直斜面、离开接触面（1）；斜面施加的静摩擦力沿斜面向上（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "每一根箭头都对应研究对象所受的一个力，先找施力物体再定方向。"
+    }
+  ]
+}

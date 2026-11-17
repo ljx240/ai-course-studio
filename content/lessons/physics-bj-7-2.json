@@ -1,0 +1,165 @@
+{
+  "id": "physics-bj-7-2",
+  "version": "1.3.0",
+  "title": "折射、凸透镜成像与眼镜",
+  "number": "7.2",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第7专题 光学",
+  "theme": "physics.scientific",
+  "objectives": [
+    "区分会聚透镜和发散透镜",
+    "按物距与焦距关系判断凸透镜成像",
+    "用光屏、成像性质与应用相互印证"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-lens",
+      "type": "interactive",
+      "title": "移动物体与光屏，比较实像和虚像",
+      "engine": "physics.lens",
+      "template": "lens",
+      "body": "先在 2f 外移动光屏找到实像，再把物体移到 2f、f 和 f 内。比较像的正倒、大小与光屏读数。"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "光从一种透明介质斜射进入另一种透明介质时一般会改变传播方向。凸透镜使平行于主光轴的光会聚，凹透镜使其发散。\n凸透镜成像：物距 u 大于 2f 时，成倒立缩小实像；u＝2f 时成倒立等大实像；f＜u＜2f 时成倒立放大实像；u＝f 时出射光对同一物点近似平行，无有限位置的清晰像；u＜f 时成正立放大虚像。\n近视眼看远处时像容易落在视网膜前，可用凹透镜矫正；教材中的远视简化模型中，近处物体的像易落在视网膜后，可用凸透镜矫正。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "用焦距判断凸透镜成像",
+      "formula": "u>2f\\quad\\text{倒立、缩小的实像}\nu=2f\\quad\\text{倒立、等大的实像}\nf<u<2f\\quad\\text{倒立、放大的实像}\nu=f\\quad\\text{像在有限距离内无法形成}\n0<u<f\\quad\\text{正立、放大的虚像}",
+      "body": "用单个凸透镜成像。物距从物体沿主光轴量到光心。移动光屏可以找到实像的位置。看虚像时，从透镜的另一侧透过透镜观察。",
+      "explanation": "先比较物距和一倍焦距，判断能否在光屏上接到像。物距大于焦距时，再和两倍焦距比较，判断像的大小。物体移到一倍焦距以内，可以透过透镜看到正立放大的虚像。",
+      "symbols": [
+        {
+          "symbol": "u",
+          "meaning": "物距，即物体到透镜光心的距离",
+          "unit": "cm"
+        },
+        {
+          "symbol": "f",
+          "meaning": "凸透镜的焦距",
+          "unit": "cm"
+        },
+        {
+          "symbol": "2f",
+          "meaning": "两倍焦距",
+          "unit": "cm"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "凸透镜的焦距为 10 cm，蜡烛先在透镜前 15 cm，再移到距透镜 8 cm 处。分别判断能否用光屏承接、像的正倒和大小。",
+      "steps": [
+        {
+          "title": "找出两个判断位置",
+          "body": "一倍焦距是十厘米，两倍焦距是二十厘米。",
+          "formula": "f=10\\text{ cm}\\quad 2f=20\\text{ cm}"
+        },
+        {
+          "title": "判断十五厘米处的像",
+          "body": "十五厘米在一倍和两倍焦距之间。像倒立、放大，移动透镜另一侧的光屏可以接到实像。",
+          "formula": "10\\text{ cm}<15\\text{ cm}<20\\text{ cm}"
+        },
+        {
+          "title": "判断八厘米处的像",
+          "body": "物体进入一倍焦距以内。用眼睛透过透镜可以看到正立放大的虚像，移动光屏无法承接。",
+          "formula": "0<8\\text{ cm}<10\\text{ cm}"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "使用光具座和低压发光物体。调整发光物、透镜、光屏中心大致同高，测量沿主光轴的物距（cm）和像距（cm）。依次在 u＞2f、u＝2f、f＜u＜2f、u＜f 试验，记录能否承接、正倒和大小。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "先判 u 与 f、2f 的位置关系，再决定到哪里找像。物距从光心量起；找不到屏上清晰像时，先区分物体在焦距内、光屏行程有限和装置未对准。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "平行于主光轴的光通过凸透镜后主要怎样变化？",
+      "options": [
+        "保持原样",
+        "从边缘反射",
+        "会聚到另一侧的焦点附近",
+        "一定全部被吸收"
+      ],
+      "answer": 2,
+      "explanation": "理想薄凸透镜使近轴平行光会聚到另一侧焦点。",
+      "knowledge_points": [
+        "kp-physics-bj-7-2-1"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "凸透镜焦距 10 cm，物距 25 cm，成像性质是什么？",
+      "options": [
+        "正立放大虚像",
+        "倒立缩小实像",
+        "倒立放大实像",
+        "倒立等大实像"
+      ],
+      "answer": 1,
+      "explanation": "u＞2f 时成倒立缩小实像。",
+      "knowledge_points": [
+        "kp-physics-bj-7-2-2"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "同一凸透镜的焦距 12 cm。若要演示放大镜，以下哪一个物距合适？",
+      "options": [
+        "30 cm",
+        "24 cm",
+        "18 cm",
+        "8 cm"
+      ],
+      "answer": 3,
+      "explanation": "放大镜形成正立放大虚像，要求 u＜f。",
+      "knowledge_points": [
+        "kp-physics-bj-7-2-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "焦距 10 cm 的凸透镜中，甲同学用 14 cm 的物距找到了屏上放大像；乙把物距改成 7 cm，找不到屏上像。乙说透镜坏了。请根据模型回应，并说明怎样观察 7 cm 时的像。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：14 cm 在 f 和 2f 之间，甲得到倒立放大实像（1）；7 cm 在焦距内，形成正立放大虚像（1）；虚像不能直接落在光屏上，不能据此判断透镜坏了（1）；从透镜另一侧透过透镜看发光物（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "用 f 和 2f 划分物距区域，先判断实虚，再讨论倒正和大小。"
+    }
+  ]
+}

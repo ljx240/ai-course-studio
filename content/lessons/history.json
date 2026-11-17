@@ -1,0 +1,54 @@
+{
+  "id": "history",
+  "version": "1.0.0",
+  "subject": "history",
+  "title": "丝绸之路与文化交流",
+  "number": "8.1",
+  "grade": "七年级 下册",
+  "chapter": "第8课 对外交流",
+  "theme": "history.atlas",
+  "objectives": [
+    "识别古代丝路的主要交流节点",
+    "理解商品与文化交流的双向性",
+    "学会区别历史证据和示意图"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "知识导入",
+      "body": "丝绸之路不是一条固定不变的单一路线，而是随时代、政治和自然条件变化的交流网络。下方是教学概念示意图，并非精确历史疆域地图。"
+    },
+    {
+      "id": "timeline",
+      "type": "interactive",
+      "engine": "history.timeline",
+      "title": "时空演变时间轴"
+    },
+    {
+      "id": "map",
+      "type": "interactive",
+      "title": "长安至天山廊道遗址分布",
+      "engine": "history.map",
+      "template": "map"
+    },
+    {
+      "id": "evidence",
+      "type": "interactive",
+      "title": "遗址与历史证据",
+      "engine": "history.evidence",
+      "template": "evidence"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "学习总结",
+      "body": "完成互动任务后，回顾本节关键知识，向 AI 教学助手继续提出问题。"
+    }
+  ]
+}

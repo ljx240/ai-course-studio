@@ -1,0 +1,175 @@
+{
+  "id": "physics-bj-3-2",
+  "version": "1.3.0",
+  "title": "液体压强与大气压",
+  "number": "3.2",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第3专题 压强",
+  "theme": "physics.scientific",
+  "objectives": [
+    "用静水深度与密度解释液体压强",
+    "区分液体产生的压强与总压强",
+    "用 U 形管读数设计对照探究"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-liquid-pressure",
+      "type": "interactive",
+      "title": "移动探头，观察 U 形管液面差",
+      "engine": "physics.liquid-pressure",
+      "template": "liquid-pressure",
+      "body": "先固定液体密度改变深度，再固定深度改变密度。各记录两组数据，写明每次改变和保持不变的量。"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "静止液体内部各方向都有压强。同一种静止液体中，从自由液面竖直向下量的深度越大，液体产生的压强越大；同深度下，液体密度越大，液体产生的压强越大。形状不同的开口容器若液体和深度相同，液体产生的压强相同。\n空气也有压强。吸盘被压紧，是因为其外侧的大气压比内部压强大；如果漏气，内外压差减小。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "液体附加压强与总压强",
+      "formula": "p_{液}=ρgh\np_{总}=p_{液面}+ρgh",
+      "body": "液体静止、密度均匀。深度从自由液面竖直向下量。开口容器的液面压强为当地大气压，深度为零时液体附加压强为零。",
+      "explanation": "题目问液体本身产生的压强时，用密度乘重力加速度再乘深度。问该处总压强时，再加上液面压强。同种液体里，要比较深度，容器的形状并不直接进入公式。",
+      "symbols": [
+        {
+          "symbol": "p_{液}",
+          "meaning": "深度处由液柱产生的附加压强",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "p_{总}",
+          "meaning": "该深度处的总压强",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "p_{液面}",
+          "meaning": "自由液面处的压强",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "ρ",
+          "meaning": "液体密度",
+          "unit": "kg/m³"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度",
+          "unit": "N/kg"
+        },
+        {
+          "symbol": "h",
+          "meaning": "从液面竖直向下量的深度",
+          "unit": "m"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "开口水箱中，水深 0.30 m 处的液体附加压强和总压强各是多少？取水的密度 1.0×10³ kg/m³，g＝10 N/kg，液面大气压为 1.00×10⁵ Pa。",
+      "steps": [
+        {
+          "title": "由深度求附加压强",
+          "body": "把水的密度、重力加速度和深度相乘，得到 3000 帕。",
+          "formula": "p_{液}=1.0×10^3\\text{ kg/m}^3×10\\text{ N/kg}×0.30\\text{ m}\np_{液}=3.0×10^3\\text{ Pa}"
+        },
+        {
+          "title": "再加液面大气压",
+          "body": "总压强等于 10 万帕加 3000 帕，也就是 10.3 万帕。",
+          "formula": "p_{总}=1.00×10^5\\text{ Pa}+3.0×10^3\\text{ Pa}=1.03×10^5\\text{ Pa}"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "用液体压强计探究。先检查探头与软管连通正常并查看 U 形管初始液面。将同一探头浸在同种液体的不同深度，保持朝向不变并记录两侧液面高度差；比较水和盐水时保持探头到各自液面的竖直深度相同。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "对照时，‘探头到容器底的距离相同’无法保证深度相同。解释吸盘时要比较内外压强，不能把吸盘保持贴合归因于里面‘没有力’。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "同种静止液体中，决定液体附加压强的深度从哪里量？",
+      "options": [
+        "从容器底竖直向上",
+        "从自由液面竖直向下",
+        "沿容器壁量",
+        "从液面斜着量"
+      ],
+      "answer": 1,
+      "explanation": "公式中的 h 是自由液面到该点的竖直深度。",
+      "knowledge_points": [
+        "kp-physics-bj-3-2-1"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "水中深 0.50 m 处的附加压强为多少？取 ρ水＝1.0×10³ kg/m³，g＝10 N/kg。",
+      "options": [
+        "500 Pa",
+        "50 Pa",
+        "5000 Pa",
+        "5 Pa"
+      ],
+      "answer": 2,
+      "explanation": "p液＝1000×10×0.50＝5000 Pa。",
+      "knowledge_points": [
+        "kp-physics-bj-3-2-2"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "比较水和盐水在同深度的压强，应怎样放探头？",
+      "options": [
+        "各自液面下同样深，保持探头朝向和装置相同",
+        "离各自容器底同样远即可",
+        "使盐水一侧探头更深",
+        "分别更换不同灵敏度的压强计"
+      ],
+      "answer": 0,
+      "explanation": "控制深度和测量条件相同，才可比较液体密度的影响。",
+      "knowledge_points": [
+        "kp-physics-bj-3-2-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "同一压强计测量：水深 10 cm 时液面差 2.0 cm，水深 20 cm 时差 4.0 cm，盐水深 10 cm 时差 2.4 cm。选两组分别说明深度、密度对液体压强的影响，并说明读数含义。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：用前两组说明同种液体中深处压强较大（1）；用第一、第三组说明同深度盐水压强较大（1）；指出分别控制液体种类和深度（1）；U 形管液面高度差用于比较压强，2.0 cm 等数值不是容器内深度（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "压强题先标自由液面、深度和密度，再区分液体附加压强与总压强。"
+    }
+  ]
+}

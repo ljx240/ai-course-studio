@@ -1,0 +1,165 @@
+{
+  "id": "physics-bj-1-3",
+  "version": "1.3.0",
+  "title": "欧姆定律与伏安法测电阻",
+  "number": "1.3",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第1专题 电学",
+  "theme": "physics.scientific",
+  "objectives": [
+    "写出欧姆定律并说明适用条件",
+    "用伏安法测量定值电阻",
+    "用 I–U 数据区分定值电阻与灯丝"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-circuit",
+      "type": "interactive",
+      "title": "测电阻并读 I–U 图像",
+      "engine": "physics.circuit",
+      "template": "circuit",
+      "body": "固定 R₁，调电源电压并记录图中工作点的 U₁ 与 I₁。取三个非零工作点，比较 U₁/I₁。",
+      "params": {
+        "parallel": 1,
+        "r1": 10,
+        "voltage": 3
+      }
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "对于温度等物理条件不变、表现为欧姆导体的元件，电流随两端电压成正比。比较不同阻值时须控制端电压相同，此时电流与电阻成反比。不能因为 R＝U/I 就说同一只定值电阻的阻值随电压正比变化。\n伏安法把电流表串入待测电阻支路，电压表跨接待测电阻两端。测定定值电阻时，用滑动变阻器改变它的端电压，测多组 U 和 I，分别求 U/I。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "欧姆定律与电阻的测量",
+      "formula": "I=\\frac{U}{R}\nR=\\frac{U}{I}\\text{，}I≠0",
+      "body": "电压、电流和电阻要对应同一个元件、同一个工作状态。对温度基本不变的欧姆导体，电阻可视为常量。用伏安法求电阻时，电流不能为零。",
+      "explanation": "在同一个定值电阻上，电压除以电流得到电阻。在电流对电压的图上，纵轴是电流、横轴是电压，斜率是电阻的倒数。灯丝温度明显改变时，每个工作点的电阻可能不同。",
+      "symbols": [
+        {
+          "symbol": "I",
+          "meaning": "流过该元件的电流",
+          "unit": "A"
+        },
+        {
+          "symbol": "U",
+          "meaning": "该元件两端的电压",
+          "unit": "V"
+        },
+        {
+          "symbol": "R",
+          "meaning": "该元件在当前工作状态下的电阻",
+          "unit": "Ω"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "定值电阻的三组测量为（1.2 V，0.12 A）、（2.0 V，0.20 A）、（2.8 V，0.28 A）。求电阻，并预测两端电压为 1.5 V 时的电流。",
+      "steps": [
+        {
+          "title": "逐组用同一个测量点",
+          "body": "每组的电压和电流配对相除。三组的比值都为 10 欧姆。",
+          "formula": "R_1=\\frac{1.2\\text{ V}}{0.12\\text{ A}}=10\\text{ Ω}\nR_2=\\frac{2.0\\text{ V}}{0.20\\text{ A}}=10\\text{ Ω}\nR_3=\\frac{2.8\\text{ V}}{0.28\\text{ A}}=10\\text{ Ω}"
+        },
+        {
+          "title": "在相同条件下预测",
+          "body": "保持元件和温度条件相同。用 1.5 伏特除以 10 欧姆，得到 0.15 安培。",
+          "formula": "I=\\frac{1.5\\text{ V}}{10\\text{ Ω}}=0.15\\text{ A}"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "先画电路图。用低压电源、开关、定值电阻、两表、滑动变阻器。变阻器用一上一下接线，闭合开关前调到接入电路的阻值最大处；量程与器件额定值由教师核定。按电压由低到高测三组，画横轴 U（V）、纵轴 I（A）的散点图。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "横轴 U、纵轴 I 时，欧姆导体直线的斜率为 1/R，单位 A/V；换轴后物理意义改变。探究 I 与 R 的关系时，换电阻后要调滑动变阻器，使待测电阻端电压回到原值。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "某 10 Ω 定值电阻两端是 3 V，电流为多少？",
+      "options": [
+        "3.0 A",
+        "30 A",
+        "0.30 A",
+        "0.03 A"
+      ],
+      "answer": 2,
+      "explanation": "同一电阻两端的电压除以其阻值：3/10＝0.30 A。",
+      "knowledge_points": [
+        "kp-physics-bj-1-3-1"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "探究电流与电阻关系，换用另一阻值后应先控制什么相同？",
+      "options": [
+        "电流表示数",
+        "滑片位置",
+        "待测电阻两端电压",
+        "电源开关的位置"
+      ],
+      "answer": 2,
+      "explanation": "调滑片使电压表示数恢复到同一目标值，再记录电流。",
+      "knowledge_points": [
+        "kp-physics-bj-1-3-2"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "某小灯泡在 1.0 V 时电流 0.20 A，在 2.0 V 时 0.30 A。这两点支持什么？",
+      "options": [
+        "灯丝两点的 U/I 不同",
+        "灯丝电阻恒为 5 Ω",
+        "电流与电压严格成正比",
+        "只要电压变大，电流一定减小"
+      ],
+      "answer": 0,
+      "explanation": "两工作点电阻约 5.0 Ω 与 6.7 Ω；灯丝工作温度可能发生变化。",
+      "knowledge_points": [
+        "kp-physics-bj-1-3-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "一位同学更换三个定值电阻，但始终不调整滑片，就用读到的电流讨论 I 与 R 的关系。指出问题，给出完整改法及应记录的量。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：更换电阻可能改变其端电压（1）；每换一次调滑片，使待测电阻端电压相同（1）；记录各次待测阻值 R 和电流 I，并核记端电压（1）；比较 I×R 是否近似相等或在同一电压下说明反比关系（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "先确认同一元件，再确认控制变量和元件的工作状态。"
+    }
+  ]
+}

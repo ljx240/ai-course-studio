@@ -1,0 +1,54 @@
+{
+  "id": "english",
+  "version": "1.0.0",
+  "subject": "english",
+  "title": "At the Restaurant",
+  "number": "4.2",
+  "grade": "七年级 上册",
+  "chapter": "Unit 4 Daily Life",
+  "theme": "english.conversation",
+  "objectives": [
+    "掌握常见点餐表达",
+    "听懂基础对话",
+    "尝试进行角色扮演"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "知识导入",
+      "body": "Listen and practice a short conversation. Select a role to hear a sample line and respond. Speech playback depends on available browser speech synthesis voices."
+    },
+    {
+      "id": "dialogue",
+      "type": "interactive",
+      "engine": "english.dialogue",
+      "title": "Restaurant Role-play"
+    },
+    {
+      "id": "words",
+      "type": "interactive",
+      "title": "点餐词汇卡",
+      "engine": "english.vocabulary",
+      "template": "vocabulary"
+    },
+    {
+      "id": "listening",
+      "type": "interactive",
+      "title": "听力与跟读",
+      "engine": "english.listening",
+      "template": "listening"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "学习总结",
+      "body": "完成互动任务后，回顾本节关键知识，向 AI 教学助手继续提出问题。"
+    }
+  ]
+}

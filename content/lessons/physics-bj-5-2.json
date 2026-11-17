@@ -1,0 +1,175 @@
+{
+  "id": "physics-bj-5-2",
+  "version": "1.3.0",
+  "title": "滑轮组、机械功与效率",
+  "number": "5.2",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第5专题 简单机械",
+  "theme": "physics.scientific",
+  "objectives": [
+    "区分定滑轮、动滑轮和滑轮组的功能",
+    "计算有用功、总功与机械效率",
+    "根据拉力、行程和效率选择提升方案"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-pulley",
+      "type": "interactive",
+      "title": "切换滑轮方案，比较拉力和行程",
+      "engine": "physics.pulley",
+      "template": "pulley",
+      "body": "固定同一重物、提升高度和绳端等效阻力，切换两种滑轮方案，记录拉力、绳端位移和效率。"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "定滑轮在理想情况下可改变用力方向；动滑轮可减小所需拉力，但绳端要移动更远。滑轮组的承重绳段数 n，要从支撑随重物一起移动的部分的有效绳段数得出。\n提升重物时，有用功是克服重物重力所做的功；总功是拉力对绳端所做的功。抬升动滑轮、克服摩擦等会用去额外的功。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "先区分有用功与总功",
+      "formula": "W_{有}=Gh\nW_{总}=Fs\ns=nh\nη=\\frac{W_{有}}{W_{总}}×100%",
+      "body": "重物竖直提升，绳端拉力沿运动方向且大小恒定。绳不可伸长、不打滑，各承重段近似竖直。计算效率时总功大于零。",
+      "explanation": "有用功看重物升高多少，总功看手拉绳端移动多少。先数清承重绳段，求出绳端位移，再比较有用功占总功的比例。",
+      "symbols": [
+        {
+          "symbol": "W_{有}, W_{总}",
+          "meaning": "有用功与输入总功",
+          "unit": "J"
+        },
+        {
+          "symbol": "G, F",
+          "meaning": "重物的重力与绳端拉力大小",
+          "unit": "N"
+        },
+        {
+          "symbol": "h, s",
+          "meaning": "重物升高量与绳端位移",
+          "unit": "m"
+        },
+        {
+          "symbol": "n",
+          "meaning": "支承动滑轮和重物的绳段数",
+          "unit": "无量纲"
+        },
+        {
+          "symbol": "η",
+          "meaning": "机械效率",
+          "unit": "通常写成百分数"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "用三段绳承重的滑轮组，将重 90 N 的物体匀速提升 0.50 m。实测绳端拉力为 36 N，求绳端位移和机械效率。",
+      "steps": [
+        {
+          "title": "计算绳端走了多远",
+          "body": "三段承重绳各缩短 0.50 米，绳端移动 1.50 米。",
+          "formula": "s=nh=3×0.50\\text{ m}=1.50\\text{ m}"
+        },
+        {
+          "title": "分开计算两种功",
+          "body": "重物获得 45 焦耳的有用功，人通过绳端输入 54 焦耳。",
+          "formula": "W_{有}=90\\text{ N}×0.50\\text{ m}=45\\text{ J}\nW_{总}=36\\text{ N}×1.50\\text{ m}=54\\text{ J}"
+        },
+        {
+          "title": "算效率并检查结果",
+          "body": "有用功除以总功得到约 83.3%。效率小于 100%，差值对应克服摩擦、提升动滑轮等额外功。",
+          "formula": "η=\\frac{45\\text{ J}}{54\\text{ J}}×100%≈83.3%"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "使用轻质绳和滑轮组。用刻度尺测重物升高量与绳端移动距离，用测力计沿绳匀速拉动，取稳定读数；记录 G、F、h、s。更换重物后保持同一绕法复测，分别计算有用功和总功。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "省力不等于省功。较大的承重绳段数降低理想拉力，却增加绳端行程；真实方案还要看最大允许拉力、可用行程和实测损耗。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "理想定滑轮的主要作用是？",
+      "options": [
+        "减半拉力",
+        "改变用力方向",
+        "省一半功",
+        "让绳端移动距离小于重物升高量"
+      ],
+      "answer": 1,
+      "explanation": "理想定滑轮的拉力大小不变，能改变施力方向。",
+      "knowledge_points": [
+        "kp-physics-bj-5-2-1"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "做有用功 24 J、总功 30 J，该机械的效率是多少？",
+      "options": [
+        "60%",
+        "75%",
+        "80%",
+        "125%"
+      ],
+      "answer": 2,
+      "explanation": "η＝24/30×100%＝80%。",
+      "knowledge_points": [
+        "kp-physics-bj-5-2-2"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "n＝4 的理想滑轮组将重物升高 0.30 m，绳端走多远？",
+      "options": [
+        "1.20 m",
+        "0.30 m",
+        "0.075 m",
+        "4.30 m"
+      ],
+      "answer": 0,
+      "explanation": "绳端位移为 n 倍重物升高量。",
+      "knowledge_points": [
+        "kp-physics-bj-5-2-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "需把 120 N 物体匀速升高 0.30 m。理想方案甲 n＝2、乙 n＝3，操作者最大拉力 50 N，绳端可用行程 0.80 m。是否有一个方案同时满足约束？写出判断依据。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：甲需 60 N、行程 0.60 m，超拉力（1）；乙需 40 N、行程 0.90 m，超行程（1）；两方案都不满足（1）；增加乙的可用行程或更换设备，并以实际拉力复核（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "先明确什么是有用功，再把拉力、行程与效率一起比较。"
+    }
+  ]
+}

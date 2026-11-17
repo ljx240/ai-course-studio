@@ -1,0 +1,165 @@
+{
+  "id": "physics-bj-3-1",
+  "version": "1.3.0",
+  "title": "固体压强：受力面积与工程选择",
+  "number": "3.1",
+  "subject": "physics",
+  "grade": "初中九年级 专题复习",
+  "chapter": "第3专题 压强",
+  "theme": "physics.scientific",
+  "objectives": [
+    "理解压力与压强的区别并正确换算面积",
+    "用 p＝F/S 比较接触面的平均压强",
+    "根据压强限制反推最小受力面积"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "virtual-solid-pressure",
+      "type": "interactive",
+      "title": "比较接触面积与压强",
+      "engine": "physics.solid-pressure",
+      "template": "solid-pressure",
+      "body": "保持压力不变，将接触面积减半。先预测压强，再用读数检查倍数关系。"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "教材知识",
+      "body": "压力指垂直作用在接触面上的力。物体只受重力和水平面的支持力且静止时，它对水平面的压力大小才等于重力；受额外外力或放在斜面上时应重新分析。\n压强描述单位面积受到的压力。用整块接触面的压力除以面积得到平均压强；若接触面受力不均，不代表每一点的压强都相同。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "压力如何分配到受力面",
+      "formula": "p=\\frac{F}{S}\n1\\text{ Pa}=\\frac{1\\text{ N}}{1\\text{ m}^2}\n1\\text{ cm}^2=10^{-4}\\text{ m}^2",
+      "body": "公式求平均压强。压力垂直接触面，面积取实际受力部分并且大于零。只有在题设中能由受力关系确定时，才可把压力大小取为重力大小。",
+      "explanation": "先找垂直接触面的压力和所有承压部位，再把面积换成平方米。压力不变时，面积减半，平均压强加倍。",
+      "symbols": [
+        {
+          "symbol": "p",
+          "meaning": "接触面的平均压强",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "F",
+          "meaning": "垂直接触面的压力大小",
+          "unit": "N"
+        },
+        {
+          "symbol": "S",
+          "meaning": "实际受力的总面积",
+          "unit": "m²"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题与解法",
+      "body": "质量 60 kg 的模型静止在水平地面上，只受重力和支持力。取 g＝10 N/kg。两块支板各接触 0.03 m²，求两块支撑和只用一块支撑时的平均压强。",
+      "steps": [
+        {
+          "title": "确定总压力",
+          "body": "模型在竖直方向平衡，总压力等于 600 牛顿。",
+          "formula": "F=G=60\\text{ kg}×10\\text{ N/kg}=600\\text{ N}"
+        },
+        {
+          "title": "两块支板承压",
+          "body": "受力面积是两块实际接触面积之和，得到 1.0 乘 10 的 4 次方帕。",
+          "formula": "p=\\frac{600\\text{ N}}{0.06\\text{ m}^2}=1.0×10^4\\text{ Pa}"
+        },
+        {
+          "title": "只用一块支板",
+          "body": "总压力不变、面积减半，平均压强加倍。",
+          "formula": "p_{单}=\\frac{600\\text{ N}}{0.03\\text{ m}^2}=2.0×10^4\\text{ Pa}"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "type": "note",
+      "title": "实验或证据任务",
+      "body": "同一块长方体木块在同一块海绵上平放和侧放，保持木块重量不变，比较稳定后的凹陷。另选同一个放置面，通过加砝码改变压力。凹陷只在相同海绵与相同观察条件下用作压力作用效果的相对指标。"
+    },
+    {
+      "id": "transfer",
+      "type": "concept",
+      "title": "方法提升",
+      "body": "城市展览的重型装置应以实际接触面积估算平均压强。反推面积时由 p≤p限 得 S≥F/p限；若各支点受力不均，还要按各支点压力比较。"
+    },
+    {
+      "id": "practice-1",
+      "type": "assessment",
+      "title": "基础题",
+      "question": "250 cm² 等于多少 m²？",
+      "options": [
+        "2.5 m²",
+        "0.25 m²",
+        "0.0025 m²",
+        "0.025 m²"
+      ],
+      "answer": 3,
+      "explanation": "平方单位要乘 10⁻⁴：250×10⁻⁴＝0.025。",
+      "knowledge_points": [
+        "kp-physics-bj-3-1-1"
+      ]
+    },
+    {
+      "id": "practice-2",
+      "type": "assessment",
+      "title": "应用题",
+      "question": "接触面压力为 300 N，受力面积 0.020 m²，平均压强是多少？",
+      "options": [
+        "1.5×10⁴ Pa",
+        "1.5×10³ Pa",
+        "6.0 Pa",
+        "0.60 Pa"
+      ],
+      "answer": 0,
+      "explanation": "用压力除以实际受力面积：300/0.020＝15000 Pa。",
+      "knowledge_points": [
+        "kp-physics-bj-3-1-2"
+      ]
+    },
+    {
+      "id": "practice-3",
+      "type": "assessment",
+      "title": "探究题",
+      "question": "展品对地面的压力 800 N，允许平均压强不超过 20 kPa。总接触面积至少多少？",
+      "options": [
+        "0.004 m²",
+        "0.040 m²",
+        "0.40 m²",
+        "40 m²"
+      ],
+      "answer": 1,
+      "explanation": "S≥800/(2.0×10⁴)＝0.040 m²。",
+      "knowledge_points": [
+        "kp-physics-bj-3-1-3"
+      ]
+    },
+    {
+      "id": "open",
+      "type": "note",
+      "title": "开放题",
+      "body": "冬季公园步道的纸面模型中，两种底座总面积相等，但甲把大部分载荷集中在一个窄支脚上，乙各脚受力更均匀。能否用总平均压强断言两者局部效果相同？写出还要测什么。"
+    },
+    {
+      "id": "review",
+      "type": "note",
+      "title": "开放题参考答案与评分",
+      "body": "4 分：不能（1）；总平均压强仅是总压力/总面积（1）；测各支脚的压力及实际接触面积（1）；分别算局部平均压强并比较最大值（1）。"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本课小结",
+      "body": "算总平均压强用总力和总面积；判断局部风险要看局部受力。"
+    }
+  ]
+}

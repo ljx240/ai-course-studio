@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f9f9ff"/><stop offset="1" stop-color="#e3eaf8"/></linearGradient><linearGradient id="mount" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#cdd9ea"/><stop offset="1" stop-color="#e9eef7"/></linearGradient></defs>
+<rect width="1200" height="230" fill="url(#sky)"/>
+<path d="M0 190 68 145 102 167 193 102 274 168 324 126 405 181 488 113 535 152 612 87 698 179 771 132 840 164 915 117 985 158 1044 135 1129 177 1200 135V230H0Z" fill="url(#mount)" opacity=".65"/>
+<path d="M0 208 116 166 176 189 285 138 346 197 473 166 562 204 685 151 774 205 897 151 964 187 1040 165 1154 205 1200 186V230H0Z" fill="#d5dfed" opacity=".46"/>
+<path d="M0 222Q190 196 390 220T800 213T1200 218V230H0" fill="#fafafa" opacity=".7"/>
+<g stroke="#c1a18a" stroke-width="2" fill="none" opacity=".76"><path d="M1010 -5Q1050 34 1080 38T1150 84"/><path d="M1058 27Q1030 65 1007 81"/><path d="M1090 43Q1135 33 1162 20"/></g>
+<g fill="#dfaf85" opacity=".75"><ellipse cx="1040" cy="26" rx="4" ry="2" transform="rotate(22 1040 26)"/><ellipse cx="1078" cy="42" rx="5" ry="2" transform="rotate(-36 1078 42)"/><ellipse cx="1103" cy="48" rx="4" ry="2" transform="rotate(30 1103 48)"/><ellipse cx="1139" cy="75" rx="5" ry="2" transform="rotate(-20 1139 75)"/><ellipse cx="1025" cy="62" rx="5" ry="2" transform="rotate(20 1025 62)"/><ellipse cx="1160" cy="24" rx="4" ry="2" transform="rotate(55 1160 24)"/></g>
+</svg>

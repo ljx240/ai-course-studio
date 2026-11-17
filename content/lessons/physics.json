@@ -1,0 +1,292 @@
+{
+  "id": "physics",
+  "version": "1.1.0",
+  "title": "平抛运动",
+  "number": "3.2",
+  "grade": "高中物理 必修二",
+  "subject": "physics",
+  "chapter": "第3章 抛体运动",
+  "theme": "physics.scientific",
+  "objectives": [
+    "理解平抛运动的概念与特点",
+    "掌握平抛运动的分解及运动学公式",
+    "能够运用模型解释生活中的运动现象"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "平抛运动的概念",
+      "body": "将物体以一定的初速度沿水平方向抛出，若物体只受重力作用，其运动称为平抛运动。平抛运动是曲线运动，可以分解为水平方向的匀速直线运动和竖直方向的自由落体运动。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "平抛运动的分解与落地条件",
+      "body": "忽略空气阻力，重力加速度恒定。以抛出点为原点，水平向抛出方向为正，竖直向下为正。落地时 y=h。实验台的离地高度等于 h−y。",
+      "formula": "x=v_0t\ny=\\frac{1}{2}gt^2\nt_{落}=\\sqrt{\\frac{2h}{g}}\nv_x=v_0\\quad v_y=gt\nv=\\sqrt{v_x^2+v_y^2}",
+      "explanation": "把平抛分成两个同时发生的运动。水平方向速度保持不变，竖直方向从静止开始做自由落体运动。先用竖直下落高度求时间，再求水平射程和落地速度。",
+      "symbols": [
+        {
+          "symbol": "x, y",
+          "meaning": "相对于抛出点的水平位移、竖直向下位移",
+          "unit": "m"
+        },
+        {
+          "symbol": "v_0",
+          "meaning": "水平初速度",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "t, t_{落}",
+          "meaning": "运动时间、落地时间",
+          "unit": "s"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度大小",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "h",
+          "meaning": "抛出点离地高度",
+          "unit": "m"
+        },
+        {
+          "symbol": "v_x, v_y",
+          "meaning": "水平、竖直速度分量",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v",
+          "meaning": "速度大小",
+          "unit": "m/s"
+        }
+      ]
+    },
+    {
+      "id": "lab",
+      "type": "interactive",
+      "title": "互动实验：平抛运动的仿真探索",
+      "engine": "physics.projectile2d",
+      "template": "projectile-horizontal",
+      "params": {
+        "speed": 8,
+        "height": 2,
+        "gravity": 9.8
+      }
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题精讲",
+      "body": "物体从距地面 2.0 m 的平台以 8.0 m/s 的初速度水平抛出。忽略空气阻力，取 g=9.8 m/s²。求落地时间、水平射程以及落地瞬间的速度大小。",
+      "steps": [
+        {
+          "title": "先用竖直方向求时间",
+          "body": "落地时下落距离等于平台高度。开方后取正值，飞行约零点六四秒。",
+          "formula": "t_{落}=\\sqrt{\\frac{2×2.0\\text{ m}}{9.8\\text{ m/s²}}}≈0.639\\text{ s}"
+        },
+        {
+          "title": "再求水平射程",
+          "body": "水平方向一直以每秒八米运动。用未舍入的时间计算，射程约为五点一一米。",
+          "formula": "x=v_0t_{落}≈5.11\\text{ m}"
+        },
+        {
+          "title": "合成落地速度",
+          "body": "竖直分速度向下，约为每秒六点二六米。与水平分速度垂直，用勾股关系合成，速度大小约为每秒十点一六米。",
+          "formula": "v_y=gt_{落}≈6.26\\text{ m/s}\nv=\\sqrt{v_x^2+v_y^2}≈10.16\\text{ m/s}"
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "type": "assessment",
+      "title": "随堂练习",
+      "question": "对于理想平抛运动，下列说法正确的是？",
+      "options": [
+        "物体的水平速度逐渐减小",
+        "物体的水平方向加速度为零",
+        "物体的竖直速度保持不变",
+        "物体的运动轨迹是直线"
+      ],
+      "answer": 1,
+      "explanation": "不计空气阻力，水平方向不受力，因此水平加速度为零，水平速度保持不变。",
+      "knowledge_points": [
+        "kp-physics-1",
+        "kp-physics-2"
+      ]
+    },
+    {
+      "id": "oblique",
+      "type": "interactive",
+      "title": "斜抛运动与最高点",
+      "engine": "physics.oblique",
+      "template": "oblique-launch"
+    },
+    {
+      "id": "law-oblique",
+      "type": "formula",
+      "title": "斜抛运动的初速度分解",
+      "formula": "v_{0x}=v_0\\text{cos}(θ)\\quad v_{0y}=v_0\\text{sin}(θ)\nx=v_{0x}t\ny=h+v_{0y}t−\\frac{1}{2}gt^2\nv_y=v_{0y}−gt\\quad t_{顶}=\\frac{v_{0y}}{g}",
+      "body": "以抛出点正下方的地面位置为原点，水平向抛出方向为正，竖直向上为正。初速度斜向上，忽略空气阻力，重力加速度恒定。落地时 y=0。",
+      "explanation": "先把初速度沿水平和竖直方向分解。最高点的竖直速度为零，水平速度保持不变。求落地时间要代入离地高度为零这个条件。只有起落等高时，上升和下降的时间才相等。",
+      "symbols": [
+        {
+          "symbol": "v_0",
+          "meaning": "初速度大小",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "v_{0x}, v_{0y}",
+          "meaning": "初速度的水平与竖直分量",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "θ",
+          "meaning": "初速度与水平方向的夹角",
+          "unit": "°"
+        },
+        {
+          "symbol": "x, y",
+          "meaning": "水平位置、离地高度",
+          "unit": "m"
+        },
+        {
+          "symbol": "h",
+          "meaning": "抛出点离地高度",
+          "unit": "m"
+        },
+        {
+          "symbol": "t, t_{顶}",
+          "meaning": "运动时间、到达最高点的时间",
+          "unit": "s"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度大小",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "v_y",
+          "meaning": "竖直速度分量，向上为正",
+          "unit": "m/s"
+        }
+      ]
+    },
+    {
+      "id": "example-oblique",
+      "type": "example",
+      "title": "斜抛运动的初速度分解例题",
+      "body": "小球从水平地面以 10 m/s、仰角 45° 斜向上抛出。取 g=10 m/s²，求最高点的高度和落地射程。",
+      "steps": [
+        {
+          "title": "分解初速度",
+          "body": "仰角四十五度，两方向的初速度分量相等。",
+          "formula": "v_{0x}=v_{0y}=5\\sqrt{2}\\text{ m/s}"
+        },
+        {
+          "title": "最高点看竖直方向",
+          "body": "令竖直速度为零，约零点七零七秒到达最高点。把这个时间代入竖直位置公式，最高点离地二点五米。",
+          "formula": "t_{顶}=\\frac{v_{0y}}{g}≈0.707\\text{ s}\ny_{顶}=\\frac{v_{0y}^2}{2g}=2.50\\text{ m}"
+        },
+        {
+          "title": "用同高条件求射程",
+          "body": "起落高度相同，飞行时间是上升时间的两倍。用水平分速度乘飞行时间，得到射程十米。",
+          "formula": "x=v_{0x}×2t_{顶}=10.0\\text{ m}"
+        }
+      ]
+    },
+    {
+      "id": "harmonic",
+      "type": "interactive",
+      "title": "弹簧振子的简谐运动",
+      "engine": "physics.harmonic",
+      "template": "spring-oscillation"
+    },
+    {
+      "id": "law-harmonic",
+      "type": "formula",
+      "title": "弹簧振子的回复力和周期",
+      "formula": "F=−kx\nω=\\sqrt{\\frac{k}{m}}\nT=2π\\sqrt{\\frac{m}{k}}\nx=A\\text{cos}(ωt)",
+      "body": "理想轻质弹簧、水平无摩擦、无阻尼，弹簧处于弹性限度内。平衡位置为原点，向右为正。这里的余弦式取振子从右端最大位移处由静止释放。",
+      "explanation": "负号表示回复力总是指向平衡位置。质量越大，周期越长。弹簧劲度越大，周期越短。从最右端出发，经过半个周期到达最左端，经过一个周期回到出发点。",
+      "symbols": [
+        {
+          "symbol": "F",
+          "meaning": "弹簧对振子的回复力，向右为正",
+          "unit": "N"
+        },
+        {
+          "symbol": "k",
+          "meaning": "弹簧劲度系数",
+          "unit": "N/m"
+        },
+        {
+          "symbol": "x",
+          "meaning": "相对于平衡位置的位移",
+          "unit": "m"
+        },
+        {
+          "symbol": "m",
+          "meaning": "振子质量",
+          "unit": "kg"
+        },
+        {
+          "symbol": "ω",
+          "meaning": "角频率",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "T",
+          "meaning": "完成一次全振动的时间",
+          "unit": "s"
+        },
+        {
+          "symbol": "A",
+          "meaning": "振幅，即最大位移的大小",
+          "unit": "m"
+        },
+        {
+          "symbol": "t",
+          "meaning": "从释放开始计时",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "id": "example-harmonic",
+      "type": "example",
+      "title": "弹簧振子的回复力和周期例题",
+      "body": "质量 1.0 kg 的振子接在劲度系数为 4.0 N/m 的理想弹簧上，从平衡位置右侧 0.50 m 处由静止释放。求周期、初始回复力和半个周期后的位移。",
+      "steps": [
+        {
+          "title": "由质量和劲度求周期",
+          "body": "质量除以劲度后开方，再乘二倍圆周率，周期约三点一四秒。",
+          "formula": "T=2π\\sqrt{\\frac{1.0\\text{ kg}}{4.0\\text{ N/m}}}≈3.14\\text{ s}"
+        },
+        {
+          "title": "判断初始回复力",
+          "body": "初始位移为正，回复力为负，大小为二牛，方向向左。",
+          "formula": "F(0)=−4.0\\text{ N/m}×0.50\\text{ m}=−2.0\\text{ N}"
+        },
+        {
+          "title": "定位半周期后的位置",
+          "body": "经过半个周期，振子到达左端，位移为负零点五米。",
+          "formula": "x(\\frac{T}{2})=−A=−0.50\\text{ m}"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本节小结",
+      "body": "平抛运动具有“水平匀速、竖直自由落体”的特征。研究时可先分解、分别求解，再合成。"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "politics",
+  "version": "1.0.0",
+  "subject": "politics",
+  "title": "公共决策的基本流程",
+  "number": "2.2",
+  "grade": "九年级 上册",
+  "chapter": "第2单元 民主与法治",
+  "theme": "politics.civic",
+  "objectives": [
+    "了解公共议题的基本决策步骤",
+    "理解信息公开与公众参与的重要性",
+    "分辨事实、观点和规则"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "知识导入",
+      "body": "公共决策通常涉及发现问题、收集事实、方案讨论、依法决策、实施与反馈等环节。点击步骤查看说明。实际程序须以当地现行法律法规为准。"
+    },
+    {
+      "id": "process",
+      "type": "interactive",
+      "engine": "politics.flow",
+      "title": "公共议题情景推演"
+    },
+    {
+      "id": "decision",
+      "type": "interactive",
+      "title": "社区阅览室的公共决策",
+      "engine": "politics.decision",
+      "template": "decision"
+    },
+    {
+      "id": "relations",
+      "type": "interactive",
+      "title": "公共事务中的角色关系",
+      "engine": "politics.relations",
+      "template": "relations"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "学习总结",
+      "body": "完成互动任务后，回顾本节关键知识，向 AI 教学助手继续提出问题。"
+    }
+  ]
+}

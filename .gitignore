@@ -1,0 +1,33 @@
+# Local configuration and data
+.env
+.env.*
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.jks
+id_rsa
+id_ed25519
+/data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.sqlite3.worker
+*.db
+*.db-*
+*.log
+
+# Environments and build output
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+*.pyc
+.DS_Store
+.venv/
+
+# Original prototype delivery notes
+/manifest.json
+/交付说明.md

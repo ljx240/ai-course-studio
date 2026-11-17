@@ -1,0 +1,90 @@
+{
+  "id": "math",
+  "version": "1.0.0",
+  "title": "二次函数图像与性质",
+  "number": "22.1",
+  "grade": "九年级 上册",
+  "subject": "math",
+  "chapter": "第22章 二次函数",
+  "theme": "math.editorial",
+  "objectives": [
+    "识别二次函数与抛物线",
+    "通过图像理解 a、b、c 的作用",
+    "能够求出抛物线顶点及对称轴"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "二次函数的图像",
+      "body": "一般地，形如 y=ax²+bx+c（a≠0）的函数叫做二次函数，其图像是一条抛物线。图像由开口方向、顶点和对称轴等要素决定。"
+    },
+    {
+      "id": "law",
+      "type": "formula",
+      "title": "系数与图像性质",
+      "body": "通过配方法可以将函数写成顶点式。系数 a 的正负决定开口方向。|a| 越大，图像在相同坐标尺度下越窄。",
+      "formula": "y = a(x + b/2a)² + (4ac−b²)/4a"
+    },
+    {
+      "id": "lab",
+      "type": "interactive",
+      "title": "交互探索：拖动系数观察抛物线",
+      "engine": "math.quadratic",
+      "template": "quadratic-explorer",
+      "params": {
+        "a": 1,
+        "b": 0,
+        "c": -1
+      }
+    },
+    {
+      "id": "example",
+      "type": "example",
+      "title": "例题精讲",
+      "body": "求函数 y=x²−2x−3 的顶点坐标、对称轴和零点。提示：将函数配方，或利用求根公式。"
+    },
+    {
+      "id": "practice",
+      "type": "assessment",
+      "title": "随堂练习",
+      "question": "当二次函数 y=ax²（a≠0）中 a<0 时，抛物线的开口方向是？",
+      "options": [
+        "向上",
+        "向下",
+        "向左",
+        "向右"
+      ],
+      "answer": 1,
+      "explanation": "二次项系数 a<0 时，抛物线开口向下。",
+      "knowledge_points": [
+        "kp-math-2"
+      ]
+    },
+    {
+      "id": "pythagorean",
+      "type": "interactive",
+      "title": "勾股定理的面积关系",
+      "engine": "math.pythagorean",
+      "template": "right-triangle"
+    },
+    {
+      "id": "tangent",
+      "type": "interactive",
+      "title": "圆与切线",
+      "engine": "math.tangent",
+      "template": "circle-tangent"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "本节小结",
+      "body": "利用动态几何观察变量变化，结合代数推导，建立图像、公式和几何性质的联系。"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "$defs": {
+    "Block": {
+      "properties": {
+        "id": {
+          "maxLength": 90,
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 150,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "body": {
+          "anyOf": [
+            {
+              "maxLength": 5000,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Body"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        },
+        "symbols": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/FormulaSymbol"
+              },
+              "maxItems": 18,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Symbols"
+        },
+        "steps": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/WorkedStep"
+              },
+              "maxItems": 10,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Steps"
+        },
+        "engine": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Engine"
+        },
+        "template": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Template"
+        },
+        "params": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Params"
+        },
+        "question": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Question"
+        },
+        "options": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Options"
+        },
+        "answer": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Answer"
+        },
+        "explanation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Explanation"
+        },
+        "knowledge_points": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 12,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Knowledge Points"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "title"
+      ],
+      "title": "Block",
+      "type": "object"
+    },
+    "FormulaSymbol": {
+      "properties": {
+        "symbol": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "meaning": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Meaning",
+          "type": "string"
+        },
+        "unit": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "symbol",
+        "meaning",
+        "unit"
+      ],
+      "title": "FormulaSymbol",
+      "type": "object"
+    },
+    "WorkedStep": {
+      "properties": {
+        "title": {
+          "maxLength": 100,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "body": {
+          "maxLength": 800,
+          "minLength": 1,
+          "title": "Body",
+          "type": "string"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        }
+      },
+      "required": [
+        "title",
+        "body"
+      ],
+      "title": "WorkedStep",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "version": {
+      "default": "1.0.0-draft",
+      "title": "Version",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 150,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "number": {
+      "default": "1.1",
+      "title": "Number",
+      "type": "string"
+    },
+    "subject": {
+      "title": "Subject",
+      "type": "string"
+    },
+    "grade": {
+      "default": "初中",
+      "title": "Grade",
+      "type": "string"
+    },
+    "chapter": {
+      "default": "",
+      "title": "Chapter",
+      "type": "string"
+    },
+    "theme": {
+      "default": "",
+      "title": "Theme",
+      "type": "string"
+    },
+    "objectives": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 7,
+      "minItems": 1,
+      "title": "Objectives",
+      "type": "array"
+    },
+    "blocks": {
+      "items": {
+        "$ref": "#/$defs/Block"
+      },
+      "maxItems": 25,
+      "minItems": 3,
+      "title": "Blocks",
+      "type": "array"
+    },
+    "generation_mode": {
+      "anyOf": [
+        {
+          "enum": [
+            "template",
+            "model"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Generation Mode"
+    },
+    "generation_job": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Generation Job"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "subject",
+    "objectives",
+    "blocks"
+  ],
+  "title": "Lesson",
+  "type": "object"
+}

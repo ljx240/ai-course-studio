@@ -1,0 +1,71 @@
+{
+  "id": "chemistry",
+  "version": "1.0.0",
+  "subject": "chemistry",
+  "title": "水分子的结构",
+  "number": "2.1",
+  "grade": "高中化学 必修一",
+  "chapter": "第2章 物质的结构",
+  "theme": "chemistry.molecular",
+  "objectives": [
+    "了解水分子的空间结构",
+    "认识共价键与分子模型",
+    "根据模型理解宏观性质与微观结构的关系"
+  ],
+  "blocks": [
+    {
+      "id": "goals",
+      "type": "objectives",
+      "title": "学习目标"
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "知识导入",
+      "body": "一个水分子由一个氧原子和两个氢原子组成，分子呈弯曲结构。点击原子查看元素信息，调整观察角度，比较不同空间视角。"
+    },
+    {
+      "id": "molecule",
+      "type": "interactive",
+      "engine": "chemistry.molecule",
+      "title": "三维结构探索"
+    },
+    {
+      "id": "task",
+      "type": "assessment",
+      "title": "模型观察",
+      "question": "一个水分子含有几个氢原子？",
+      "options": [
+        "1个",
+        "2个",
+        "3个",
+        "4个"
+      ],
+      "answer": 1,
+      "explanation": "水的分子式为 H₂O，每个分子包含两个氢原子。",
+      "knowledge_points": [
+        "kp-chemistry-1"
+      ]
+    },
+    {
+      "id": "equation",
+      "type": "interactive",
+      "title": "化学方程式配平",
+      "engine": "chemistry.equation",
+      "template": "equation"
+    },
+    {
+      "id": "dilution",
+      "type": "interactive",
+      "title": "浓度与体积",
+      "engine": "chemistry.dilution",
+      "template": "dilution"
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "学习总结",
+      "body": "完成互动任务后，回顾本节关键知识，向 AI 教学助手继续提出问题。"
+    }
+  ]
+}

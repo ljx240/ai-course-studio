@@ -1,0 +1,684 @@
+{
+  "physics.projectile2d": {
+    "template": "projectile-horizontal",
+    "parameters": {
+      "speed": {
+        "name": "初速度 v₀",
+        "unit": "m/s",
+        "min": 4,
+        "max": 13,
+        "step": 0.1,
+        "initial": 8
+      },
+      "height": {
+        "name": "抛出高度 h",
+        "unit": "m",
+        "min": 1,
+        "max": 3.5,
+        "step": 0.1,
+        "initial": 2
+      },
+      "gravity": {
+        "name": "重力加速度 g",
+        "unit": "m/s²",
+        "min": 4,
+        "max": 12,
+        "step": 0.1,
+        "initial": 9.8
+      }
+    },
+    "playback": true
+  },
+  "math.quadratic": {
+    "template": "quadratic-explorer",
+    "parameters": {
+      "a": {
+        "name": "系数 a",
+        "unit": "",
+        "min": -4,
+        "max": 4,
+        "step": 0.05,
+        "initial": 1
+      },
+      "b": {
+        "name": "系数 b",
+        "unit": "",
+        "min": -6,
+        "max": 6,
+        "step": 0.05,
+        "initial": 0
+      },
+      "c": {
+        "name": "系数 c",
+        "unit": "",
+        "min": -6,
+        "max": 6,
+        "step": 0.05,
+        "initial": -1
+      }
+    }
+  },
+  "chemistry.molecule": {
+    "template": "molecule",
+    "parameters": {}
+  },
+  "english.dialogue": {
+    "template": "dialogue",
+    "parameters": {}
+  },
+  "chinese.poetry": {
+    "template": "poetry",
+    "parameters": {}
+  },
+  "history.timeline": {
+    "template": "timeline",
+    "parameters": {}
+  },
+  "politics.flow": {
+    "template": "flow",
+    "parameters": {}
+  },
+  "physics.oblique": {
+    "template": "oblique-launch",
+    "parameters": {
+      "speed": {
+        "name": "初速度 v₀",
+        "unit": "m/s",
+        "min": 2,
+        "max": 20,
+        "step": 0.1,
+        "initial": 10
+      },
+      "angle": {
+        "name": "发射角 θ",
+        "unit": "°",
+        "min": 0,
+        "max": 85,
+        "step": 1,
+        "initial": 45
+      },
+      "height": {
+        "name": "发射高度 h",
+        "unit": "m",
+        "min": 0,
+        "max": 4,
+        "step": 0.1,
+        "initial": 0
+      },
+      "gravity": {
+        "name": "重力加速度 g",
+        "unit": "m/s²",
+        "min": 4,
+        "max": 12,
+        "step": 0.1,
+        "initial": 9.8
+      }
+    },
+    "playback": true
+  },
+  "physics.harmonic": {
+    "template": "spring-oscillation",
+    "parameters": {
+      "amplitude": {
+        "name": "振幅 A",
+        "unit": "m",
+        "min": 0.1,
+        "max": 1,
+        "step": 0.05,
+        "initial": 0.5
+      },
+      "mass": {
+        "name": "质量 m",
+        "unit": "kg",
+        "min": 0.2,
+        "max": 3,
+        "step": 0.1,
+        "initial": 1
+      },
+      "stiffness": {
+        "name": "劲度系数 k",
+        "unit": "N/m",
+        "min": 1,
+        "max": 20,
+        "step": 0.5,
+        "initial": 4
+      }
+    },
+    "playback": true
+  },
+  "math.pythagorean": {
+    "template": "right-triangle",
+    "parameters": {
+      "a": {
+        "name": "直角边 a",
+        "unit": "cm",
+        "min": 1,
+        "max": 8,
+        "step": 0.1,
+        "initial": 3
+      },
+      "b": {
+        "name": "直角边 b",
+        "unit": "cm",
+        "min": 1,
+        "max": 8,
+        "step": 0.1,
+        "initial": 4
+      }
+    }
+  },
+  "math.tangent": {
+    "template": "circle-tangent",
+    "parameters": {
+      "radius": {
+        "name": "半径 r",
+        "unit": "cm",
+        "min": 1,
+        "max": 5,
+        "step": 0.1,
+        "initial": 3
+      },
+      "angle": {
+        "name": "圆心角 θ",
+        "unit": "°",
+        "min": 0,
+        "max": 360,
+        "step": 1,
+        "initial": 45
+      }
+    }
+  },
+  "chemistry.equation": {
+    "template": "equation",
+    "parameters": {}
+  },
+  "chemistry.dilution": {
+    "template": "dilution",
+    "parameters": {}
+  },
+  "english.vocabulary": {
+    "template": "vocabulary",
+    "parameters": {}
+  },
+  "english.listening": {
+    "template": "listening",
+    "parameters": {}
+  },
+  "chinese.strokes": {
+    "template": "strokes",
+    "parameters": {}
+  },
+  "chinese.annotation": {
+    "template": "annotation",
+    "parameters": {}
+  },
+  "history.map": {
+    "template": "map",
+    "parameters": {}
+  },
+  "history.evidence": {
+    "template": "evidence",
+    "parameters": {}
+  },
+  "politics.decision": {
+    "template": "decision",
+    "parameters": {}
+  },
+  "politics.relations": {
+    "template": "relations",
+    "parameters": {}
+  },
+  "physics.circuit": {
+    "template": "circuit",
+    "parameters": {
+      "voltage": {
+        "name": "电源电压 U",
+        "unit": "V",
+        "min": 0,
+        "max": 12,
+        "step": 0.1,
+        "initial": 6
+      },
+      "r1": {
+        "name": "电阻 R₁",
+        "unit": "Ω",
+        "min": 4,
+        "max": 30,
+        "step": 1,
+        "initial": 6
+      },
+      "r2": {
+        "name": "电阻 R₂",
+        "unit": "Ω",
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "initial": 12
+      },
+      "parallel": {
+        "name": "接法",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 0
+      },
+      "closed": {
+        "name": "S₂ 开关",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 1
+      }
+    }
+  },
+  "physics.joule": {
+    "template": "joule",
+    "parameters": {
+      "voltage": {
+        "name": "电源电压 U",
+        "unit": "V",
+        "min": 0,
+        "max": 12,
+        "step": 0.1,
+        "initial": 6
+      },
+      "resistance": {
+        "name": "电阻 R₂",
+        "unit": "Ω",
+        "min": 2,
+        "max": 12,
+        "step": 0.5,
+        "initial": 8
+      },
+      "time": {
+        "name": "通电时间 t",
+        "unit": "s",
+        "min": 0,
+        "max": 180,
+        "step": 5,
+        "initial": 60
+      }
+    }
+  },
+  "physics.household": {
+    "template": "household",
+    "parameters": {
+      "kettle": {
+        "name": "电热水壶",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 1
+      },
+      "heater": {
+        "name": "电暖器",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 0
+      },
+      "lamp": {
+        "name": "台灯",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 0
+      }
+    }
+  },
+  "physics.spring-force": {
+    "template": "spring-force",
+    "parameters": {
+      "mass": {
+        "name": "钩码质量 m",
+        "unit": "kg",
+        "min": 0,
+        "max": 0.6,
+        "step": 0.05,
+        "initial": 0.2
+      }
+    }
+  },
+  "physics.friction": {
+    "template": "friction",
+    "parameters": {
+      "pull": {
+        "name": "水平拉力 F",
+        "unit": "N",
+        "min": 0,
+        "max": 16,
+        "step": 0.1,
+        "initial": 3
+      },
+      "normal": {
+        "name": "支持力 N",
+        "unit": "N",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "initial": 15
+      },
+      "rough": {
+        "name": "接触面",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 0
+      }
+    }
+  },
+  "physics.solid-pressure": {
+    "template": "solid-pressure",
+    "parameters": {
+      "force": {
+        "name": "压力 F",
+        "unit": "N",
+        "min": 0,
+        "max": 800,
+        "step": 10,
+        "initial": 300
+      },
+      "area": {
+        "name": "接触面积 S",
+        "unit": "cm²",
+        "min": 25,
+        "max": 800,
+        "step": 5,
+        "initial": 200
+      }
+    }
+  },
+  "physics.liquid-pressure": {
+    "template": "liquid-pressure",
+    "parameters": {
+      "depth": {
+        "name": "探头深度 h",
+        "unit": "m",
+        "min": 0,
+        "max": 0.6,
+        "step": 0.01,
+        "initial": 0.2
+      },
+      "density": {
+        "name": "液体密度 ρ",
+        "unit": "kg/m³",
+        "min": 800,
+        "max": 1300,
+        "step": 10,
+        "initial": 1000
+      }
+    }
+  },
+  "physics.buoyancy": {
+    "template": "buoyancy",
+    "parameters": {
+      "depth": {
+        "name": "物体底面深度 h",
+        "unit": "cm",
+        "min": -5,
+        "max": 20,
+        "step": 0.1,
+        "initial": 4
+      },
+      "density": {
+        "name": "液体密度 ρ",
+        "unit": "kg/m³",
+        "min": 800,
+        "max": 1300,
+        "step": 10,
+        "initial": 1000
+      }
+    }
+  },
+  "physics.ship-load": {
+    "template": "ship-load",
+    "parameters": {
+      "cargo": {
+        "name": "载荷质量 m",
+        "unit": "g",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "initial": 150
+      },
+      "density": {
+        "name": "液体密度 ρ",
+        "unit": "kg/m³",
+        "min": 1000,
+        "max": 1200,
+        "step": 10,
+        "initial": 1000
+      }
+    }
+  },
+  "physics.lever": {
+    "template": "lever",
+    "parameters": {
+      "load": {
+        "name": "阻力 F₂",
+        "unit": "N",
+        "min": 20,
+        "max": 300,
+        "step": 5,
+        "initial": 60
+      },
+      "arm": {
+        "name": "支点到施力点",
+        "unit": "m",
+        "min": 0.2,
+        "max": 0.8,
+        "step": 0.01,
+        "initial": 0.6
+      },
+      "angle": {
+        "name": "动力与杆夹角 θ",
+        "unit": "°",
+        "min": 20,
+        "max": 90,
+        "step": 1,
+        "initial": 90
+      }
+    }
+  },
+  "physics.pulley": {
+    "template": "pulley",
+    "parameters": {
+      "moving": {
+        "name": "滑轮组",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 1
+      },
+      "load": {
+        "name": "重物重力 G",
+        "unit": "N",
+        "min": 40,
+        "max": 160,
+        "step": 5,
+        "initial": 90
+      },
+      "height": {
+        "name": "提升高度 h",
+        "unit": "m",
+        "min": 0.1,
+        "max": 1.2,
+        "step": 0.05,
+        "initial": 0.5
+      },
+      "friction": {
+        "name": "绳端等效阻力",
+        "unit": "N",
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "initial": 5
+      }
+    }
+  },
+  "physics.water-heating": {
+    "template": "water-heating",
+    "parameters": {
+      "power": {
+        "name": "加热功率 P",
+        "unit": "W",
+        "min": 200,
+        "max": 500,
+        "step": 10,
+        "initial": 400
+      },
+      "time": {
+        "name": "加热时间 t",
+        "unit": "s",
+        "min": 0,
+        "max": 240,
+        "step": 1,
+        "initial": 100
+      }
+    }
+  },
+  "physics.specific-heat": {
+    "template": "specific-heat",
+    "parameters": {
+      "mass": {
+        "name": "每份液体质量 m",
+        "unit": "kg",
+        "min": 0.2,
+        "max": 1,
+        "step": 0.05,
+        "initial": 0.5
+      },
+      "heat": {
+        "name": "每份吸热 Q",
+        "unit": "kJ",
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "initial": 6
+      },
+      "capacity": {
+        "name": "对照液体比热容 c",
+        "unit": "J/(kg·℃)",
+        "min": 1200,
+        "max": 4200,
+        "step": 100,
+        "initial": 2100
+      }
+    }
+  },
+  "physics.mirror": {
+    "template": "mirror",
+    "parameters": {
+      "distance": {
+        "name": "物距 u",
+        "unit": "cm",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "initial": 55
+      },
+      "angle": {
+        "name": "入射角 i",
+        "unit": "°",
+        "min": 0,
+        "max": 65,
+        "step": 1,
+        "initial": 40
+      }
+    }
+  },
+  "physics.lens": {
+    "template": "lens",
+    "parameters": {
+      "distance": {
+        "name": "物距 u",
+        "unit": "cm",
+        "min": 4,
+        "max": 48,
+        "step": 1,
+        "initial": 30
+      },
+      "focus": {
+        "name": "焦距 f",
+        "unit": "cm",
+        "min": 8,
+        "max": 16,
+        "step": 1,
+        "initial": 10
+      },
+      "screen": {
+        "name": "光屏位置",
+        "unit": "cm",
+        "min": 5,
+        "max": 50,
+        "step": 1,
+        "initial": 25
+      }
+    }
+  },
+  "physics.electromagnet": {
+    "template": "electromagnet",
+    "parameters": {
+      "turns": {
+        "name": "线圈匝数 N",
+        "unit": "匝",
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "initial": 150
+      },
+      "current": {
+        "name": "线圈电流 I",
+        "unit": "A",
+        "min": -1.5,
+        "max": 1.5,
+        "step": 0.1,
+        "initial": 0.6
+      }
+    }
+  },
+  "physics.induction": {
+    "template": "induction",
+    "parameters": {
+      "position": {
+        "name": "导体位置",
+        "unit": "m",
+        "min": 0,
+        "max": 0.5,
+        "step": 0.005,
+        "initial": 0.3
+      },
+      "velocity": {
+        "name": "导体速度 v",
+        "unit": "m/s",
+        "min": -4,
+        "max": 4,
+        "step": 0.25,
+        "initial": 0
+      },
+      "field": {
+        "name": "磁感应强度 B",
+        "unit": "T",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "initial": 0.5
+      },
+      "closed": {
+        "name": "回路开关",
+        "unit": "",
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "initial": 1
+      }
+    }
+  }
+}
